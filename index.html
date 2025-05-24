@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин товаров</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Магазин товаров из Китая </h1>
+        <nav>
+            <button id="dropdown-button">Меню</button>
+            <ul id="dropdown-menu">
+                <li><a href="#">Домашняя страница</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search">
+            <input type="text" id="search-input" placeholder="Поиск товара...">
+        </section>
+
+        <section id="products">
+            <h2>Наши товары</h2>
+            <div class="product" data-name="фрукт дыма" data-price="1000">
+                <img src="дым.jpg" alt="Товар 1">
+                <h3>фрукт дыма</h3>
+                <p>Цена: 1000₽</p>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+            <div class="product" data-name="бибизяна раб" data-price="10000">
+                <img src="%D0%BE%D0%B1%D0%B5%D0%B7%D1%8C%D1%8F%D0%BD%D0%B0.jpg" alt="Товар 2">
+                <h3>бибизяна раб</h3>
+                <p>Цена: 10000₽</p>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+            <div class="product" data-name="рикролл" data-price="100000">
+                <img src="рикролл.jpg" alt="Товар 3">
+                <h3>рикролл </h3>
+                <p>Цена: 100000₽</p>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+            <div class="product" data-name="рабы китайцы" data-price="1300">
+                <img src="китай.jpg" alt="Товар 4">
+                <h3>рабы китайцы </h3>
+                <p>Цена: 1300₽</p>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+            <div class="product" data-name="китсуне" data-price="5">
+                <img src="rbnceyt.jpg" alt="Товар 5">
+                <h3>китсуне </h3>
+                <p>Цена:5₽</p>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+            <div class="product" data-name="драгон" data-price="30000">
+                <img src="драгон.jpg" alt="Товар 6">
+                <h3>восточный драгон </h3>
+                <p>Цена:30000₽</p>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+            <div class="product" data-name="чёрный хагги вагги негр" data-price="18999">
+                <img src="чёрный.jpg" alt="Товар 7">
+                <h3>чёрный негр хагги вагги </h3>
+                <p>Цена:18999₽</p>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+            <div class="product" data-name="беломагги" data-price="1000">
+                <img src="беломагги.jpg" alt="Товар 8">
+                <h3>беломагги </h3>
+                <p>Цена:1000₽</p>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+            <div class="product" data-name="лучший фруктик" data-price="100000000">
+                <img src="бум.jpg" alt="Товар 9">
+                <h3>лучший фруктик </h3>
+                <p>Цена:100000000₽</p>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </section>
+
+        <section id="cart">
+            <h2>Корзина</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Общая сумма: 0₽</p>
+            <button id="clear-cart-button">очистить корзину</button>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Магазин товаров</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

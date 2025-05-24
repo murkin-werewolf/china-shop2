@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    position: relative;
+}
+
+#dropdown-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 150px;
+}
+
+#dropdown-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+#dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+#dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+main {
+    padding: 20px;
+}
+
+#products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.product button {
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+}
+
+#cart {
+    margin-top: 40px;
+    background: white;
+    padding: 20px;
+    box-shadow: 10px rgba(0, 0, 0, 0.1);
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#total-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button#clear-cart-button {
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button#clear-cart-button:hover {
+    background-color: #cc4626;
+}
+
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+/* Анимация кнопки добавления */
+.add-to-cart {
+    transition: transform 0.2s ease;
+}
+
+.add-to-cart:active {
+    transform: scale(1.1);
+}
